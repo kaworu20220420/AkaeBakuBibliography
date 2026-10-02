@@ -1,0 +1,68 @@
+/* design.css */
+/* 赤江瀑 書誌DB 共通レイアウト */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/* 全ページ共通の背景設定 */
+body {
+	/* 背景画像：本棚 */
+	background-image: url("images/bookshelf.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; /* 画面いっぱいにフィット */
+	background-position: center; /* 中央寄せ */
+	background-attachment: fixed; /* スクロールしても背景固定 */
+	/* 読みやすさのためのオーバーレイ */
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: darken;
+	font-family: "Yu Gothic", "Meiryo", sans-serif;
+	color: #f5f5f5;
+}
+
+/* コンテンツを中央寄せ＋読みやすい幅に制限 */
+.main-container {
+	max-width: 960px;
+	margin: 40px auto;
+	padding: 24px 32px;
+	background-color: rgba(0, 0, 0, 0.6); /* 半透明黒で文字をくっきり */
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* 見出し */
+h1 {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 1.8rem;
+}
+
+h2 {
+	margin-top: 24px;
+	margin-bottom: 8px;
+	font-size: 1.4rem;
+}
+
+/* リスト */
+ul {
+	margin-top: 8px;
+	margin-bottom: 16px;
+	padding-left: 24px;
+}
+
+/* リンク */
+a {
+	color: #ffd27f;
+	text-decoration: none;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+/* 書籍一覧のリストを少し詰める */
+.book-list li {
+	margin-bottom: 6px;
+}
